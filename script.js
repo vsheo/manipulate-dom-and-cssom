@@ -75,6 +75,21 @@ function saveEmojiList() {
 
 function surpriseMe() {
   console.log('Surpise me 🎉')
+
+  // selecteer de ul
+  const emojiUl = document.querySelector('.emojis')
+
+  // selecteer de list met emojis
+  const emojiLi = document.querySelectorAll('.emojis li')
+
+  // add class aan de ul
+  emojiUl.classList.toggle('rotate')
+
+  // add class aan de li
+  emojiLi.forEach((emoji) => {
+    emoji.classList.toggle('rotate')
+  });
+
 }
 
 function highlightItem(event) {

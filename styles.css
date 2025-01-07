@@ -98,6 +98,32 @@ ul.emojis li:hover {
   transform: rotate(5deg) scale(1.2);
 }
 
+/* ----------------------------------------- */
+.emojis li {
+  position: relative;
+}
+
+.emojis.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+.emojis li.rotate {
+  transform-origin: center;
+  animation: rotate 3s linear infinite;
+  opacity: 1;
+
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+/* ----------------------------------------- */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

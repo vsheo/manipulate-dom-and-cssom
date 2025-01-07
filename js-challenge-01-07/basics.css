@@ -1,0 +1,16 @@
+body {
+    background-color: aqua;
+}
+
+p {
+    --opac: 0.5;
+    position: relative;
+    /* interface animation moet niet langer zijn dan 250ms */
+    transition: 0.25s;
+    opacity: var(--opac);
+}
+
+p.moveit {
+    /* --opacity: 1; ga naar javascript */
+    translate: 10% 10%;
+}
